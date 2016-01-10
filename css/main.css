@@ -1,7 +1,7 @@
 /* -------------------------- */
 /*  WILDCARD MAIN STYLESHEET  */
 /*                            */
-/*  Last edited: 8 Jan 2016   */
+/*  Last edited: 10 Jan 2016  */
 /*  Last edit by: Chi Señires */
 /*                            */
 /* -------------------------- */
@@ -38,7 +38,7 @@ html, body {
   margin: 0.5% 0 0;
 }
 
-.banner > img {
+.banner img {
   display: block;
   width: 50%;
   margin: 0 auto;
@@ -47,48 +47,80 @@ html, body {
 /* nav STYLES */
 nav {
   width: 100%;
-  /*margin-top: 0.5em;*/
   background-color: #04A89D;
   border-top: #1A1A1A 5px solid;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 nav ul {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   list-style-type: none;
+  position: absolute;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
 }
 
 nav ul li a {
   display: block;
+  min-width: 160px;
+  height: 40px;
   text-align: center;
-  color: #F3F3F3;
+  line-height: 200%;
   text-decoration: none;
   font-size: 1.25rem;
-  padding: 0.75rem 3.35rem;
+  color: #F3F3F3;
+  background-color: #04A89D;
   transition: 200ms;
 }
 
-nav ul li a:hover {
+nav ul li:hover a {
   background-color: #85C549;
   transition: 200ms;
 }
 
-.search {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  height: 25px;
-  padding: 0 1.5%;
+/* for dropdown */
+nav ul li .dropdown {
+  display: none;
+  z-index: 6;
 }
 
-.search input[type="text"] {
+nav ul li .dropdown li {
+  display: block;
+  float: none;
+}
+
+nav ul li .dropdown li a {
+  width: auto;
+  min-width: 140px;
+  padding: 0 20px;
+}
+
+nav ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+nav ul li:hover .dropdown a {
+  background-color: #04A89D;
+}
+
+nav ul li:hover .dropdown a:hover {
+  background-color: #85C549;
+}
+
+.search {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+.search input[type=text] {
   border: none;
   font-size: 1.05em;
   text-indent: 5px;
@@ -102,6 +134,24 @@ nav ul li a:hover {
 
 .search a:hover {
   background-color: #85C549;
+}
+
+.show-menu {
+  height: 30px;
+  padding: 20px;
+  font-size: 1.8em;
+  text-decoration: none;
+  background-color: #04A89D;
+  display: none;
+}
+
+.header input[type=checkbox] {
+  display: none;
+}
+
+.header input[type=checkbox]:checked ~ ul {
+  display: block;
+  transition: 200ms;
 }
 
 /* MAIN CONTENT STYLES */
@@ -179,8 +229,8 @@ nav ul li a:hover {
 }
 
 #featured {
-  width: calc(100%/2);
-  margin: 0.5% 0.75% 0 0;
+  width: calc(100%/2.15);
+  margin: 0.5% 1.25% 0 0.25%;
 }
 
 #featured > .preview-box {
@@ -213,4 +263,179 @@ nav ul li a:hover {
 #featured .featured-text:hover {
   background-color: rgba(255,255,255,1);
   transition: 400ms;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 760px) {
+  /* header STYLES */
+  .header {
+    width: 100%;
+    margin: 0;
+    border-bottom: #1A1A1A 5px solid;
+  }
+
+  .banner {
+    background-color: #fff;
+  }
+
+  .banner img {
+    display: block;
+    width: 70%;
+    margin-top: 2.5%;
+    margin-left: 20px;
+  }
+
+  /* nav STYLES */
+  nav {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+  }
+
+  nav ul, .search {
+    position: static;
+    display: none;
+    transition: 200ms;
+  }
+
+  nav ul li {
+    margin-right: 0;
+  }
+
+  nav ul li, nav ul li a {
+    width: 100%;
+  }
+
+  nav ul li:first-child {
+    padding-top: 75px;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 20px;
+  }
+
+  nav ul li:last-child .dropdown li:last-child {
+    margin-bottom: 0;
+  }
+
+/*  .search input[type="text"] {
+    display: none;
+  }*/
+
+  .show-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* MAIN CONTENT STYLES */
+  .content {
+    width: 80%;
+    margin: 0 auto 2.5%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .category-title {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+
+  /* Article preview-box styles */
+  .preview-box {
+    width: calc(100%/4.5);
+    height: 22.75em;
+    margin: 0.8% 1%;
+    overflow: hidden;
+    background-color: #fff;
+    border-top: #04A89D 5px solid;
+    transition: 400ms;
+  }
+
+  .fade {
+    position: relative;
+    height: calc(14px * 133.33% * 3);
+  }
+
+  .fade::after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 16px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  }
+
+  .preview-box .article-image {
+    width: 100%;
+    height: 10em;
+    background-image: url("../images/sample.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .preview-box h1 {
+    padding: 12.5px 5px 5px;
+  }
+
+  .preview-box footer, .preview-box p {
+    padding: 0.5px 5px;
+  }
+
+  .preview-box > footer {
+    font-size: 0.75em;
+  }
+
+  /* onhover styles */
+  .preview-box:hover {
+    border-top-color: #85C549;
+    transition: 400ms;
+  }
+
+  #featured {
+    width: calc(100%/2);
+    margin: 0.5% 0.75% 0 0;
+  }
+
+  #featured > .preview-box {
+    width: 100%;
+    position: relative;
+  }
+
+  #featured .featured-image {
+    width: 100%;
+    height: 22.75em;
+    background-image: url("images/sample2.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .clip {
+    -webkit-clip-path: inset(0 0 40em 0);
+            clip-path: inset(0 0 40em 0);
+  }
+
+  .featured-text {
+    background-color: rgba(255,255,255,0.75);
+    position: absolute;
+    bottom: 0;
+    padding: 1%;
+    transition: 400ms;
+  }
+
+  #featured a:hover + .featured-text,
+  #featured .featured-text:hover {
+    background-color: rgba(255,255,255,1);
+    transition: 400ms;
+  }
 }

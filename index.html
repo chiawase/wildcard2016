@@ -14,18 +14,33 @@
 
 <body>
   <header class="header">
-    <a href="index.html">
-      <div class="banner">
-        <img src="images/header.png">
-        <!-- maybe add links to other social media accounts here too -->
-      </div>
-    </a>
+    
+    <div class="banner">
+      <a href="index.html">
+          <img src="images/header.png">
+          <!-- maybe add links to other social media accounts here too -->
+      </a>
+    </div>
+    
     <nav>
+      <label for="show-menu" class="show-menu"><i class="fa fa-bars"></i></label>
+      <input type="checkbox" id="show-menu" role="button">
+
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="category.html">CompSAt</a></li>
+        <li><a href="category.html">CompSAt <i class="fa fa-caret-down"></i></a>
+          <ul class="hidden dropdown">
+            <li><a href="category.html">CompSAt Events</a></li>
+            <li><a href="category.html">Select*</a></li>
+          </ul>
+        </li>
         <li><a href="category.html">IT</a></li>
-        <li><a href="category.html">Creatives</a></li>
+        <li><a href="category.html">Creatives <i class="fa fa-caret-down"></i></a>
+          <ul class="hidden dropdown">
+            <li><a href="category.html">Reviews</a></li>
+            <li><a href="category.html">IT Out</a></li>
+          </ul>
+      </li>
       </ul>
       <div class="search">
         <input type="text" placeholder="Search...">
@@ -175,7 +190,8 @@
       <!-- excerpt here -->
       <p>Last July 29, Microsoft began the rollout of Windows 10, the latest version of the Windows OS. With talks of Microsoft remedying some of the changes in Windows 8 (the interface was accommodating for touch screens but awkward for keyboard and mouse), what is Windows 10 like?</p>
     </article>
-
   </main>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
