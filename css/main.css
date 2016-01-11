@@ -21,7 +21,7 @@ header, footer,  nav, article, main {
 /* GENERAL STYLES */
 html, body {
   width: 100%;
-  background-color: #F8F8F8;
+  background-color: #a6a6a6;
   background-image: url("../images/bg.png");
   background-repeat: repeat;
   overflow-x: hidden;
@@ -230,7 +230,7 @@ nav ul li:hover .dropdown a:hover {
 
 #featured {
   width: calc(100%/2.15);
-  margin: 0.75% 1.5% 0 0;
+  margin: 0.7% 1.15% 0 0.25%;
 }
 
 #featured > .preview-box {
