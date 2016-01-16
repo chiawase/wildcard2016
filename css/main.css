@@ -24,13 +24,13 @@ html, body {
   background-color: #a6a6a6;
   /*background-image: url("../images/bg.png");*/
   /*background-repeat: repeat;*/
-  background-color: #bfbfbf;
+  background-color: #dfdfdf;
   overflow-x: hidden;
 }
 
 /* header STYLES */
 .header {
-  width: 80%;
+  width: 75%;
   margin: 1% auto;
 }
 
@@ -157,7 +157,7 @@ nav ul li:hover .dropdown a:hover {
 
 /* MAIN CONTENT STYLES */
 .content {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -168,6 +168,7 @@ nav ul li:hover .dropdown a:hover {
   flex-grow: 5;
   width: 23%;
   margin-top: 0.8%;
+  margin-left: 1.75%;
   background-color: #fff;
 }
 
@@ -180,8 +181,8 @@ nav ul li:hover .dropdown a:hover {
 
 .article-month-list {
   margin: 0.5rem auto;
-  text-indent: 2rem;
-  list-style-position: inside;
+  text-align: center;
+  list-style-type: none;
 }
 
 .article-month-list > li a {
@@ -202,6 +203,7 @@ nav ul li:hover .dropdown a:hover {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .category-title {
@@ -212,9 +214,10 @@ nav ul li:hover .dropdown a:hover {
 
 /* Article preview-box styles */
 .preview-box {
-  width: calc(100%/4.5);
+  width: 23.53%;
+  width: calc(100%/4.25);
   height: 22.75em;
-  margin: 0.8% 1%;
+  margin: 0.8% 0;
   overflow: hidden;
   background-color: #fff;
   border-top: #04A89D 5px solid;
@@ -246,11 +249,13 @@ nav ul li:hover .dropdown a:hover {
 }
 
 .preview-box h1 {
-  padding: 12.5px 5px 5px;
+  padding: 7.5px 5px 0;
+  line-height: 125%;
+  font-size: 1.25rem;
 }
 
 .preview-box footer, .preview-box p {
-  padding: 0.5px 5px;
+  padding: 0 5px;
 }
 
 .preview-box > footer {
@@ -264,8 +269,9 @@ nav ul li:hover .dropdown a:hover {
 }
 
 #featured {
-  width: calc(100%/2.15);
-  margin: 0.5% 1.15% 0 0.25%;
+  width: 74.3%;
+  /*width: calc(100%/1.5);*/
+  margin: 0.3% 1.7% 0 0;
 }
 
 #featured > .preview-box {
@@ -281,16 +287,11 @@ nav ul li:hover .dropdown a:hover {
   background-size: cover;
 }
 
-.clip {
-  -webkit-clip-path: inset(0 0 40em 0);
-          clip-path: inset(0 0 40em 0);
-}
-
 .featured-text {
   background-color: rgba(255,255,255,0.75);
   position: absolute;
   bottom: 0;
-  padding: 1%;
+  padding: 0.5% 1%;
   transition: 400ms;
 }
 
