@@ -26,7 +26,7 @@
       <label for="show-menu" class="show-menu"><i class="fa fa-bars"></i></label>
       <input type="checkbox" id="show-menu" role="button">
 
-      <ul>
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="category.html">CompSAt <i class="fa fa-caret-down"></i></a>
           <ul class="hidden dropdown">
@@ -50,146 +50,146 @@
   </header>
 
   <main class="content" role="main">
-    <div id="featured">
-      <article class="preview-box">
-        <!-- This is similar to what Wildcard already has at the moment. -->
+    <section class="articles">
+      <div id="featured">
+        <article class="preview-box">
+          <!-- This is similar to what Wildcard already has at the moment. -->
+            <a href="article.html">
+              <div class="featured-image" style="background-image: url('images/sample2.jpg');"></div>
+            </a>
+            <div class="featured-text">
+              <header>
+                <a href="article.html">
+                  <h1>I.T. Out: Uchi no Neko</h1>
+                </a>
+              </header>
+              <footer>
+                By <a href="author.html" class="author">Carlo Natividad</a>
+              </footer>
+              <p>There seems to be a growing trend for cat (or dog) cafés going around, and one such venue recently opened its doors in Katipunan—the Uchi No Neko Café, roughly translating to &#8220;House of Cat.&#8221;</p>
+            </div>
+        </article>      
+      </div>
+
+      <article class="preview-box fade">
+        <header>
           <a href="article.html">
-            <div class="featured-image" style="background-image: url('images/sample2.jpg');"></div>
+            <div class="article-image" style="background-image: url('images/01.jpg');"></div>
+            <h1>The History of Google</h1>
           </a>
-          <div class="featured-text">
-            <header>
-              <a href="article.html">
-                <h1>I.T. Out: Uchi no Neko</h1>
-              </a>
-            </header>
-            <footer>
-              By <a href="author.html" class="author">Carlo Natividad</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">30 Dec 2015</a>
-            </footer>
-            <!-- excerpt here -->
-            <p>There seems to be a growing trend for cat (or dog) cafés going around, and one such venue recently opened its doors in Katipunan—the Uchi No Neko Café, roughly translating to "House of Cat."</p>
-          </div>
-      </article>      
-    </div>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Jerome Michael Jacob</a>
+        </footer>
+        <p>How did a simple search engine turn into one of the greatest legacies of all time? It all started...</p>
+      </article>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/01.jpg');"></div>
-          <h1>The History of Google</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Jerome Michael Jacob</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">16 Dec 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>How did a simple search engine turn into one of the greatest legacies of all time? It all started with two not-so-best friends.</p>
-    </article>
+      <article class="preview-box fade">
+        <header>
+          <a href="article.html">
+            <div class="article-image" style="background-image: url('images/02.png');"></div>
+            <h1>The World's Smallest 3D Printer</h1>
+          </a>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Micah Alexis Valix</a>
+        </footer>
+        <p>With the upsurge of new technologies, 3D printing takes the world by...</p>
+      </article>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/02.png');"></div>
-          <h1>The World's Smallest 3D Printer</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Micah Alexis Valix</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">16 Dec 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>With the upsurge of new technologies, 3D printing takes the world by storm with its newest advancement: the 3D micro printer. With its ingenious features tied with affordability and portability, it’s bound to bring the world of printing to a whole new level.</p>
-    </article>
+      <article class="preview-box fade">
+        <header>
+          <a href="article.html">
+            <div class="article-image" style="background-image: url('images/03.png');"></div>
+            <h1>The Great Things You Can Do With Git</h1>
+          </a>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Willard Torres</a>
+        </footer>
+        <p>Managing a project’s source code, be it a solo project or a large-scale one maintained by a team,...</p>
+      </article>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/03.png');"></div>
-          <h1>The Great Things You Can Do With Git</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Willard Torres</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">14 Oct 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>Managing a project’s source code, be it a solo project or a large-scale one maintained by a team, is an important aspect when it comes to talking about software engineering.</p>
-    </article>
+      <article class="preview-box fade">
+        <header>
+          <a href="article.html">
+            <div class="article-image" style="background-image: url('images/04.PNG');"></div>
+            <h1>The Importance of Web Design</h1>
+          </a>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Ian De La Cruz</a>
+        </footer>
+        <p>Web developers are, oftentimes, focused on just making things work. This article discusses why...</p>
+      </article>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/04.PNG');"></div>
-          <h1>The Importance of Web Design</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Ian De La Cruz</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">7 Oct 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>Web developers are, oftentimes, focused on just making things work. This article discusses why everyone should also talk about design.</p>
-    </article>
+      <article class="preview-box fade">
+        <header>
+          <a href="article.html">
+            <div class="article-image" style="background-image: url('images/05.png');"></div>
+            <h1>Upcoming October CompSAt Events</h1>
+          </a>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Elysia Jelena Villadarez</a>
+        </footer>
+        <p>CompSAt has prepared exciting events that will surely help new and old members alike in more...</p>
+      </article>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/05.png');"></div>
-          <h1>Upcoming October CompSAt Events</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Elysia Jelena Villadarez</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">30 Sept 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>CompSAt has prepared exciting events that will surely help new and old members alike in more ways than one.</p>
-    </article>
+      <article class="preview-box fade">
+        <header>
+          <a href="article.html">
+            <div class="article-image" style="background-image: url('images/06.jpg');"></div>
+            <h1>Heads' Hellos &amp; Haikus</h1>
+          </a>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Andre Tan</a>
+        </footer>
+        <p>Here’s a haiku for you:<br>The EB, AC<br>will introduce him, herself<br>read, get to know them!</p>
+      </article>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/06.jpg');"></div>
-          <h1>Heads' Hellos &amp; Haikus</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Andre Tan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">30 Sept 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>Here’s a haiku for you:<br>The EB, AC<br>will introduce him, herself<br>read, get to know them!</p>
-    </article>
+      <article class="preview-box fade">
+        <header>
+          <a href="article.html">
+            <div class="article-image" style="background-image: url('images/07.PNG');"></div>
+            <h1>Jolly Cooperation: CompSAt's Packages</h1>
+          </a>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Dennis Villamor</a>
+        </footer>
+        <p>Every CompSAt member is placed into one of four packages, which serve as the members' families...</p>
+      </article>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/07.PNG');"></div>
-          <h1>Jolly Cooperation: CompSAt's Packages</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Dennis Villamor</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">30 Sept 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>Every CompSAt member is placed into one of four packages, which serve as the members' families within the organization. The Packages are: Warrior, Mage, Hunter, and Assassin.</p>
-    </article>
+      <article class="preview-box fade">
+        <header>
+          <a href="article.html">
+            <div class="article-image" style="background-image: url('images/08.png');"></div>
+            <h1>Windows 10: What's New?</h1>
+          </a>
+        </header>
+        <footer>
+          By <a href="author.html" class="author">Bea Adajar</a>
+        </footer>
+        <p>Last July 29, Microsoft began the rollout of Windows 10, the latest version of the Windows...</p>
+      </article>
+    </section>
 
-    <article class="preview-box fade">
-      <!-- This is similar to what Wildcard already has at the moment. -->
-      <header>
-        <a href="article.html">
-          <div class="article-image" style="background-image: url('images/08.png');"></div>
-          <h1>Windows 10: What's New?</h1>
-        </a>
-      </header>
-      <footer>
-        By <a href="author.html" class="author">Bea Adajar</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="article.html" class="datetime">16 Sept 2015</a>
-      </footer>
-      <!-- excerpt here -->
-      <p>Last July 29, Microsoft began the rollout of Windows 10, the latest version of the Windows OS. With talks of Microsoft remedying some of the changes in Windows 8 (the interface was accommodating for touch screens but awkward for keyboard and mouse), what is Windows 10 like?</p>
-    </article>
+    <section class="widgets">
+      <div class="archive">
+        <h1>Wildcard Archives</h1>
+        <ul class="article-month-list">
+          <li><a href="#">January 2016</a></li>
+          <li><a href="#">December 2015</a></li>
+          <li><a href="#">November 2015</a></li>
+          <li><a href="#">October 2015</a></li>
+          <li><a href="#">September 2015</a></li>
+          <li><a href="#">August 2015</a></li>
+        </ul>
+      </div>
+    </section>
+    
   </main>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="js/main.js"></script>
