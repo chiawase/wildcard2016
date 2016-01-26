@@ -55,6 +55,10 @@ nav {
   z-index: 2;
 }
 
+.fixed {
+  position: fixed;
+}
+
 nav ul {
   list-style-type: none;
   position: absolute;
@@ -160,7 +164,6 @@ nav ul li:hover .dropdown a:hover {
   width: 75%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -203,7 +206,6 @@ nav ul li:hover .dropdown a:hover {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .category-title {
@@ -217,7 +219,7 @@ nav ul li:hover .dropdown a:hover {
   width: 23.53%;
   width: calc(100%/4.25);
   height: 22.75em;
-  margin: 0.8% 0;
+  margin: 0.8% 1.25% 0.8% 0;
   overflow: hidden;
   background-color: #fff;
   border-top: #04A89D 5px solid;
@@ -250,7 +252,7 @@ nav ul li:hover .dropdown a:hover {
 
 .preview-box h1 {
   padding: 7.5px 5px 0;
-  line-height: 125%;
+  line-height: 120%;
   font-size: 1.25rem;
 }
 
@@ -269,9 +271,8 @@ nav ul li:hover .dropdown a:hover {
 }
 
 #featured {
-  width: 74.3%;
-  /*width: calc(100%/1.5);*/
-  margin: 0.3% 1.7% 0 0;
+  width: 73%;
+  margin: 0.3% 1.25% 0 0;
 }
 
 #featured > .preview-box {
