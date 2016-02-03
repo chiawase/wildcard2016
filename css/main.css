@@ -7,7 +7,7 @@
 
 html, body {
   width: 100%;
-  background-color: #A8A8A8;
+  background-color: #F8F8F8;
   overflow-x: hidden;
 }
 
@@ -137,6 +137,7 @@ nav ul li .search a {
   width: 80%;
   margin: 8em auto 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -187,6 +188,7 @@ nav ul li .search a {
   overflow: hidden;
   background-color: #F8F8F8;
   border-top: #04A89D 5px solid;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25);
   transition: 400ms;
 }
 
@@ -204,13 +206,13 @@ nav ul li .search a {
 }
 
 .preview-box .article-header {
-  padding: 10px 15px 2.5px;
+  padding: 1rem 1.25rem 0.5rem;
   line-height: 120%;
   font-size: 1.25rem;
 }
 
 .preview-box .article-info, .preview-box .article-excerpt {
-  padding: 5px 15px 2.5px;
+  padding: 0rem 1.25rem 0.5rem;
 }
 
 /* Featured article styles */
@@ -234,7 +236,7 @@ nav ul li .search a {
 
 #featured .featured-text {
   position: absolute;
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.8);
   bottom: 0;
   padding: 2.5% 2.5% 5%;
   transition: 400ms;
@@ -244,4 +246,10 @@ nav ul li .search a {
 #featured .featured-text:hover {
   background-color: rgba(255,255,255,1);
   transition: 400ms;
+}
+
+/* Category styles */
+.search-query {
+  margin-bottom: 1%;
+  flex-basis: 100%;
 }
