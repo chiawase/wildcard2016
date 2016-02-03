@@ -16,7 +16,8 @@
 .main-article {
   background-color: #fff;
   padding: 5em 2.5em 2.5em;
-  width: 60%;
+  width: 55%;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25);
 }
 
 .main-article .article-title {
@@ -42,6 +43,7 @@
 .main-article h5, 
 .main-article h6 {
   margin: 0 auto;
+  width: 90%;
 }
 
 .main-article > p {
@@ -107,7 +109,7 @@ figcaption {
 }
 
 .tags {
-  margin: 1rem 2rem;
+  margin: 1rem auto;
 }
 
 .tags > a {
@@ -130,15 +132,16 @@ figcaption {
 .comments {
   display: block;
   padding: 0 1rem;
-  width: 100%;
-  height: 750px;
+  width: 63%;
+  height: 500px;
+  margin: 1rem 0;
   background-color: #A8A8A8;
 }
 
 /* RANDOM ARTICLES styles */
 .random-articles {
   /*position: fixed;*/
-  width: 30%;
+  width: 35%;
   margin: 0 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -149,6 +152,8 @@ figcaption {
 .random-articles > article {
   width: 45%;
   margin: 1.5rem 0.5rem 0;
+  /*padding: 1rem;*/
+  max-height: 18.5em;
 }
 
 .random-articles > h1 {
@@ -156,6 +161,15 @@ figcaption {
   flex-basis: 100%;
   background-color: #04A89D;
   color: #fff;
+}
+
+.random-articles .article-header {
+  font-size: 1rem;
+}
+
+.random-articles .article-info {
+  font-size: 0.75rem;
+  padding: 0 1.5em;
 }
 
 /* RESPONSIVE STYLES */
