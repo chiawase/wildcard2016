@@ -1,27 +1,32 @@
 /* ----------------------------- */
 /*  WILDCARD ARTICLE STYLESHEET  */
 /*                               */
-/*    Last edited: 11 Jan 2016   */
+/*    Last edited: 2 Feb 2016    */
 /*   Last edit by: Chi Señires   */
 /*                               */
 /* ----------------------------- */
 
 @import url("main.css");
 
-.main-article {
-  background-color: #fff;
-  padding: 1rem 5rem;
-  margin: 2.5% auto;
+.content {
   width: 90%;
+  flex-wrap: wrap;
 }
 
-.main-article h1 {
+.main-article {
+  background-color: #fff;
+  padding: 5em 2.5em 2.5em;
+  width: 55%;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+}
+
+.main-article .article-title {
   font-size: 3em;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
-.main-article footer {
+.main-article .article-info {
   text-align: center;
 }
 
@@ -38,11 +43,12 @@
 .main-article h5, 
 .main-article h6 {
   margin: 0 auto;
+  width: 90%;
 }
 
 .main-article > p {
   margin: 0.95rem auto;
-  width: 60rem;
+  width: 90%;
 }
 
 .main-article .article-image {
@@ -103,7 +109,7 @@ figcaption {
 }
 
 .tags {
-  margin: 1rem 2rem;
+  margin: 1rem auto;
 }
 
 .tags > a {
@@ -117,59 +123,53 @@ figcaption {
   color: #D3D3D3;
 }
 
-.after-article {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.after-article > section {
+.widgets {
+  display: block;
   margin: 0 1%;
 }
 
 /* COMMENTS? */
 .comments {
+  display: block;
   padding: 0 1rem;
-  width: 100%;
-  -webkit-flex-grow: 1.95;
-      -ms-flex-positive: 1.95;
-          flex-grow: 1.95;
-  height: 750px;
+  width: 63%;
+  height: 500px;
+  margin: 1rem 0;
   background-color: #A8A8A8;
 }
 
 /* RANDOM ARTICLES styles */
 .random-articles {
-  padding: 0 0.5rem;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  /*position: fixed;*/
+  width: 35%;
+  margin: 0 1rem;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-negative: 1.95;
-      -webkit-flex-shrink: 1.95;
-          flex-shrink: 1.95;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .random-articles > article {
   width: 45%;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0.5rem 0;
+  /*padding: 1rem;*/
+  max-height: 18.5em;
 }
 
 .random-articles > h1 {
-  padding: 0.75rem;
-  -webkit-flex: 4 0 100%;
-      -ms-flex: 4 0 100%;
-          flex: 4 0 100%;
+  padding: 1rem;
+  flex-basis: 100%;
   background-color: #04A89D;
   color: #fff;
+}
+
+.random-articles .article-header {
+  font-size: 1rem;
+}
+
+.random-articles .article-info {
+  font-size: 0.75rem;
+  padding: 0 1.5em;
 }
 
 /* RESPONSIVE STYLES */
@@ -207,12 +207,6 @@ figcaption {
   .tags > a {
     display: inline-block;
     margin: 5px;
-  }
-
-  .after-article {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
   }
 
   .random-articles {
