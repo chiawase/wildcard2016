@@ -56,7 +56,6 @@
 .main-article .article-image {
   border: #d1d1d1 solid 5px;
   background-color: #d1d1d1;
-  display: none;
 }
 
 .main-article .align-center,
@@ -89,15 +88,15 @@
 }
 
 .main-article .size-full {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .main-article .size-medium {
-  max-width: 30%;
+  max-width: 60%;
 }
 
 .main-article .size-small {
-  max-width: 15%;
+  max-width: 30%;
 }
 
 figcaption {
