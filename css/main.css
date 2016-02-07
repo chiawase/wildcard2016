@@ -27,7 +27,6 @@ html, body {
   position: fixed;
   width: 100%;
   height: 6.5em;
-  /*border-bottom: #1A1A1A 5px solid;*/
   box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
   z-index: 999;
 }
@@ -36,7 +35,6 @@ html, body {
   display: inline-block;
   width: 30%;
   height: 100%;
-  /*padding: 0.5rem 0;*/
   margin: 0;
   background-color: #f8f8f8;
 }
@@ -139,7 +137,6 @@ nav ul li .search a {
 }
 
 .show-menu {
-  /*height: 100%;*/
   padding: 1.45rem;
   font-size: 1.8em;
   text-decoration: none;
@@ -158,115 +155,6 @@ nav ul li .search a {
   display: block;
   transition: 200ms;
 }
-
-  /*nav {
-    width: 100%;
-    background-color: #04A89D;
-    border-top: #1A1A1A 5px solid;
-    height: 40px;
-    position: relative;
-    z-index: 2;
-  }
-
-  nav ul {
-    list-style-type: none;
-    position: absolute;
-  }
-
-  nav ul li {
-    display: inline-block;
-    float: left;
-    margin-right: 1px;
-  }
-
-  nav ul li a {
-    display: block;
-    min-width: 160px;
-    height: 40px;
-    text-align: center;
-    line-height: 200%;
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: #F3F3F3;
-    background-color: #04A89D;
-    transition: 200ms;
-  }
-
-  nav ul li:hover a {
-    background-color: #85C549;
-    transition: 200ms;
-  }
-
-  nav ul li .dropdown {
-    display: none;
-    z-index: 6;
-  }
-
-  nav ul li .dropdown li {
-    display: block;
-    float: none;
-  }
-
-  nav ul li .dropdown li a {
-    width: auto;
-    min-width: 140px;
-    padding: 0 20px;
-  }
-
-  nav ul li a:hover + .hidden, .hidden:hover {
-    display: block;
-  }
-
-  nav ul li:hover .dropdown a {
-    background-color: #04A89D;
-  }
-
-  nav ul li:hover .dropdown a:hover {
-    background-color: #85C549;
-  }
-
-  .search {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-    height: 40px;
-    padding: 10px 20px;
-  }
-
-  .search input[type=text] {
-    border: none;
-    font-size: 1.05em;
-    text-indent: 5px;
-  }
-
-  .search a {
-    color: #F3F3F3;
-    font-size: 1.15em;
-    padding: 1.5px;
-  }
-
-  .search a:hover {
-    background-color: #85C549;
-  }
-
-  .show-menu {
-    padding: 20px;
-    font-size: 1.8em;
-    text-decoration: none;
-    background-color: #04A89D;
-    position: absolute;
-    right: 0;
-    display: none;
-  }
-
-  .header input[type=checkbox] {
-    display: none;
-  }
-
-  .header input[type=checkbox]:checked ~ ul {
-    display: block;
-    transition: 200ms;
-  }*/
 
 /* MAIN CONTENT STYLES */
 .content {
@@ -403,34 +291,6 @@ nav ul li .search a {
     height: auto;
   }
 
-  /*nav {
-    width: 15%;
-    position: fixed;
-    top: 0;
-    height: 5.5em;
-    margin: 0;
-    background: transparent;
-    height: 5em;
-  }
-
-  nav ul, .search {
-    position: static;
-    display: none;
-    transition: 200ms;
-  }
-
-  nav .navbar li {
-    margin-bottom: 1px;
-  }
-
-  nav .navbar li, .navbar li a {
-    width: 100%;
-  }
-
-  .show-menu {
-    display: block;
-  }*/
-
   /* nav STYLES */
   nav {
     background-color: transparent;
@@ -444,10 +304,6 @@ nav ul li .search a {
     height: auto;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
     display: none;
-  }
-
-  nav ul {
-    /*margin-top: 67px;*/
   }
 
   nav ul li, nav ul li a {
@@ -471,21 +327,9 @@ nav ul li .search a {
     position: static;
   }
 
-/*  nav .menu li:first-child {
-    padding-top: 67px;
-  }
-*/
-  nav .menu li:last-child {
-    /*margin-bottom: 20px;*/
-  }
-
   nav .menu li:last-child .dropdown li:last-child {
     margin-bottom: 0;
   }
-
-/*  .search input[type="text"] {
-    display: none;
-  }*/
 
   .show-menu {
     display: block;
