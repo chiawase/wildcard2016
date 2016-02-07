@@ -245,6 +245,10 @@ nav ul li .search a {
   margin: 0.3% 1.25% 0 0;
 }
 
+#featured .article-header {
+  font-size: 1.75em;
+}
+
 #featured .preview-box {
   width: 100%;
   position: relative;
@@ -260,7 +264,7 @@ nav ul li .search a {
 
 #featured .featured-text {
   position: absolute;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   bottom: 0;
   padding: 2.5% 2.5% 5%;
   transition: 400ms;
@@ -288,11 +292,12 @@ nav ul li .search a {
 
   .header .logo {
     width: 85%;
-    height: auto;
+    height: 100%;
   }
 
   /* nav STYLES */
   nav {
+    margin-top: -4px;
     background-color: transparent;
   }
 
@@ -337,5 +342,19 @@ nav ul li .search a {
 
   .content {
     width: 90%;
+    margin-top: 7em;
+  }
+
+  #featured, .preview-box {
+    width: 100%;
+  }
+
+  #featured {
+    margin: auto;
+  }
+
+  .preview-box {
+    margin: 0.75em auto;
+    height: 22em;
   }
 }
