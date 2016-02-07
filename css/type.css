@@ -54,3 +54,9 @@ a.author, a.datetime {
 a:hover.author, a:hover.datetime {
   color: #85C549;
 }
+
+@media screen and (max-width: 760px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 100%;
+  }
+}

@@ -153,8 +153,7 @@ figcaption {
 .random-articles > article {
   width: 23%;
   margin: 1.5rem 0.5rem 0;
-  /*padding: 1rem;*/
-  max-height: 20em;
+  height: 20em;
 }
 
 .random-articles > h1 {
@@ -177,15 +176,19 @@ figcaption {
 /* RESPONSIVE STYLES */
 @media screen and (max-width: 760px) {
   .main-article {
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .main-article .article-title,
+  .main-article .article-info {
+    margin: 0 auto;
+  }
+
+  .main-article p {
+    margin: 2em auto;
     width: 100%;
-  }
-
-  .main-article h1 {
-    font-size: 2.5em;
-  }
-
-  .main-article > p {
-    width: 17.5rem;
   }
 
   .main-article .align-left,
@@ -202,16 +205,22 @@ figcaption {
     max-width: 100%;
   }
 
-  .tags {
-    margin: 1rem;
-  }
-
   .tags > a {
     display: inline-block;
-    margin: 5px;
+    margin: 2px;
   }
 
-  .random-articles {
-    margin-top: 2.5%;
+  .random-articles, .comments {
+    margin: 2.5% auto;
+    width: 100%;
+  }
+
+  .random-articles > article {
+    width: 100%;
+    height: 17em;
+  }
+
+  .random-articles .article-header {
+    font-size: 1.25em;
   }
 }
