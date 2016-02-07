@@ -69,11 +69,11 @@ nav ul li {
 
 nav ul li a {
   display: block;
+  background-color: #04A89D;
   width: 180px;
   height: 100%;
   padding: 2rem 0;
   text-align: center;
-  text-decoration: none;
   font-size: 1.25rem;
   color: #F3F3F3;
   transition: 200ms;
@@ -139,13 +139,14 @@ nav ul li .search a {
 }
 
 .show-menu {
-  height: 100%;
-  padding: 20px;
+  /*height: 100%;*/
+  padding: 1.45rem;
   font-size: 1.8em;
   text-decoration: none;
   background-color: #04A89D;
   position: absolute;
   right: 0;
+  top: 0;
   display: none;
 }
 
@@ -153,7 +154,7 @@ nav ul li .search a {
   display: none;
 }
 
-.header input[type=checkbox]:checked ~ .navbar {
+.header input[type=checkbox]:checked ~ #navbar {
   display: block;
   transition: 200ms;
 }
@@ -399,7 +400,7 @@ nav ul li .search a {
 
   .header .logo {
     width: 85%;
-    height: 100%;
+    height: auto;
   }
 
   /*nav {
@@ -432,27 +433,42 @@ nav ul li .search a {
 
   /* nav STYLES */
   nav {
-    position: fixed;
-    top: 0;
     background-color: transparent;
   }
 
   nav ul, .search {
-    position: static;
+    position: absolute;
+    right: 0;
+    background-color: #04A89D;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
     display: none;
-    transition: 200ms;
   }
 
   nav ul {
-    margin-top: 67px;
+    /*margin-top: 67px;*/
+  }
+
+  nav ul li, nav ul li a {
+    width: 100%;
   }
 
   nav ul li {
     margin-right: 0;
   }
 
-  nav ul li, nav ul li a {
+  nav ul li a {
+    padding: 1rem 0;
+  }
+
+  nav ul li .dropdown li a {
     width: 100%;
+  }
+
+  nav ul li a:focus + .hidden, .hidden:focus {
+    display: block;
+    position: static;
   }
 
 /*  nav .menu li:first-child {
@@ -460,7 +476,7 @@ nav ul li .search a {
   }
 */
   nav .menu li:last-child {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
 
   nav .menu li:last-child .dropdown li:last-child {
