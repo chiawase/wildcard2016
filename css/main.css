@@ -197,8 +197,8 @@ nav ul li .search a {
 
 /* ARTICLE STYLES */
 .articles {
-  flex-shrink: 10;
-  margin: 0 auto 2.5%;
+  width: 100%;
+  margin-bottom: 2.5%;
   display: flex;
   flex-wrap: wrap;
 }
