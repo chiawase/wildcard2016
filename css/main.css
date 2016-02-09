@@ -29,7 +29,24 @@ html, body {
   height: 6.5em;
   box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
   z-index: 999;
+  transition: 200ms;
 }
+
+.header.mini {
+  height: 5em;
+  transition: 200ms;
+}
+
+  .header.mini nav ul li a,
+  .header.mini .search {
+    padding: 1.25rem 0;
+    transition: 200ms;
+  }
+
+  .header.mini .logo img {
+    width: 65%;
+    transition: 200ms;
+  }
 
 .header .logo {
   display: inline-block;
@@ -43,6 +60,7 @@ html, body {
   display: block;
   margin: 0 auto;
   width: 80%;
+  transition: 200ms;
 }
 
 nav {
@@ -70,7 +88,7 @@ nav ul li a {
   background-color: #04A89D;
   width: 180px;
   height: 100%;
-  padding: 2rem 0;
+  padding: 2.2rem 0;
   text-align: center;
   font-size: 1.25rem;
   color: #F3F3F3;
@@ -117,8 +135,9 @@ nav ul li:hover .dropdown a:hover {
 .search input[type=text] {
   display: inline;
   border: transparent solid 1px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #1A1A1A;
   color: #fff;
+  font-family: "Clear Sans", sans-serif;
   padding: 0.25rem;
   width: 75%;
   transition: 200ms;
@@ -133,11 +152,13 @@ nav ul li .search a {
   display: inline;
   vertical-align: middle;
   width: 20%;
+  padding: 2rem 0;
   margin-left: 0.25rem;
+  background-color: transparent;
 }
 
 .show-menu {
-  padding: 1.45rem 1rem;
+  padding: 1.45rem 1.25rem;
   font-size: 1.8em;
   text-decoration: none;
   background-color: #04A89D;
