@@ -282,6 +282,17 @@ nav ul li .search a {
   flex-basis: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .header .logo img {
+    padding: 0.8em 0;
+  }
+
+  nav ul li a {
+    width: 125px;
+    font-size: 1.2em;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header {
     height: 6em;
@@ -293,11 +304,6 @@ nav ul li .search a {
 
   .header .logo img {
     padding: 1.25em 0;
-  }
-
-  nav ul li a {
-    width: 125px;
-    font-size: 1.2em;
   }
 
   .search {
