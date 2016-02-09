@@ -137,7 +137,7 @@ nav ul li .search a {
 }
 
 .show-menu {
-  padding: 1.45rem;
+  padding: 1.45rem 1rem;
   font-size: 1.8em;
   text-decoration: none;
   background-color: #04A89D;
@@ -357,6 +357,8 @@ nav ul li .search a {
   .header .logo img {
     width: auto;
     height: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   /* nav STYLES */
